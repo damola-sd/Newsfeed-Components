@@ -38,3 +38,17 @@ let articles = document.querySelectorAll('.article');
 articles.forEach(element => {
   new Article(element);
 });
+
+let articlePiece = document.createElement('div')
+let heading = articlePiece.createElement('h2');
+let date = articlePiece.createElement('p');
+
+//Working on an article comonent generator
+
+class ArticleComponentConstructor {
+  constructor(article) {
+    this.heading = article.title;
+    this.data = article.date;
+    this
+  }
+}
